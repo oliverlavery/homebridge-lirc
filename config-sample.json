@@ -1,0 +1,24 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "123-45-678"
+    },
+
+    "description": "",
+
+    "accessories": [
+        {
+            "accessory": "GenericLircDevice",
+            "name": "Stereo",
+            "description": "Home Theater Stereo",
+            "id": "OL1",
+            "manufacturer": "Yamaha",
+            "model_name": "YAS-101",
+            "on_command": "irsend SEND_ONCE audio power\r",
+            "off_command": "irsend SEND_ONCE audio power\r",
+            "initial_state": "off"
+        }
+    ]
+}
